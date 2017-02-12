@@ -1,4 +1,6 @@
-<% jquery_ui_path = if Jquery::Ui::Rails::VERSION >= "5"
+<% jquery_ui_path = if Jquery::Ui::Rails::VERSION >= "6"
+                      "jquery-ui/widgets/"
+                    elsif Jquery::Ui::Rails::VERSION >= "5"
                       "jquery-ui/"
                     else
                       "jquery.ui."
